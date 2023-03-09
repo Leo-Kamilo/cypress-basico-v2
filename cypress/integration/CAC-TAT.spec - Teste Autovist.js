@@ -9,8 +9,8 @@ describe('Central de Atendimento ao Cliente TAT', function() {
     })
 
     it.only('preenche os campos obrigatórios e envia o formulário', function(){
-        cy.get('#id_email').type('leonardo@teste.com')
-        cy.get('#id_senha').type('Mudar2021')
+        cy.get('#id_email').type(Cypress.env('user_name'))
+        cy.get('#id_senha').type(Cypress.env('user_password'))
         cy.get('#logar').click()
 
     })
