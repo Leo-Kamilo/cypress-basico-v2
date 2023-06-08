@@ -1,6 +1,5 @@
-/// <reference types="Cypress" />
-
 describe('Teste Sistema Autovist', function() {
+    
     beforeEach(function(){
         cy.visit('https://autovist.com.br/login/')
     })
